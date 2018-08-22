@@ -14,14 +14,17 @@
     <div class="header">
         <h1>Task Flow</h1>
     </div>
+    <div id="add-task-container">
+        <label for="add-task">Add  a task:</label>
+        <input id="add-task" type="text">
+    </div>
     <div id="main-container">
         <div class="area" id="start-area">
             <div class="area-header">
                 <h2>Tasks</h2>
             </div>
             <div class="area-body">
-                <ul>
-                    <li></li>
+                <ul id="start-area-list">
                 </ul>
             </div>
         </div>
@@ -30,7 +33,9 @@
                 <h2>In Progress</h2>
             </div>
             <div class="area-body">
+                <ul id="inProgress-area-list">
 
+                </ul>
              </div>
         </div>
         <div class="area" id="Done-Area">
@@ -38,13 +43,11 @@
                 <h2>Done</h2>
             </div>
             <div class="area-body">
-
+                <ul id="done-area-list">
+                </ul>
             </div>
         </div>
     </div>
-
-
-
-<script src="taskFlow.js"></script>
+<script type="text/javascript" src="taskFlow.js"></script>
 </body>
 </html>
