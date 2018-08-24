@@ -46,6 +46,13 @@ inProgressArea.on("click", "span", function(event){
 	event.stopPropagation();
 });
 
+doneArea.on("click", "span", function(event){
+	$(this).parent().fadeOut(300,function(){
+		$(this).remove();
+	});
+	event.stopPropagation();
+});
+
 
 
 
