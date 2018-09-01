@@ -67,7 +67,7 @@ doneArea.on("click", "span", function(event){
 
 function updateProgress() {
   let progress = 0;  
-  progress = (doneTasks / totalTasks) * 100;
+  progress = Math.floor((doneTasks / totalTasks) * 100);
   progressBar.css("width", progress + "%");
   progressBar.text(progress + "%"); 
 }
